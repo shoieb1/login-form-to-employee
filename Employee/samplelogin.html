@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="samplelogin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Login</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <br><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="employeeDetailsContainer" class="container" style="display: none;">
+    <h1 id="employeeName"></h1>
+    <div id="employeeDetails">
+      <!-- Employee details will be dynamically populated here -->
+    </div>
+  </div>
+
+  <script src="samplelogin.js"></script>
+</body>
+</html>
